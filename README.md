@@ -1,0 +1,1 @@
+# script-clear-image-desktop-mac
