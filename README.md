@@ -15,12 +15,4 @@
 
 ### `clean_desktop_images.sh`
 ```bash
-#!/bin/bash
-
-DESKTOP_DIR="$HOME/Desktop"
-
-# 🔍 ค้นหาและลบไฟล์ภาพที่พบบน Desktop
-find "$DESKTOP_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.heic" \) -exec rm {} \;
-
-# 📝 log การลบ (ถ้าต้องการ)
-echo "$(date): Deleted image files from Desktop" >> "$HOME/clean_desktop_log.txt"
+0 0 * * * /bin/bash /Users/your-username/clean_desktop_images.sh
