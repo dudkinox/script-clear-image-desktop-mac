@@ -9,4 +9,4 @@ echo "Last updated: $(date '+%Y-%m-%d %H:%M:%S')" > README.md
 # Git push
 git add README.md
 git commit -m "Update timestamp at $(date '+%Y-%m-%d %H:%M:%S')"
-git push guitar main
+git push guitar main --force
